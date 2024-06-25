@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="rs/grammar.ico" type="image/x-icon">
+    <title>.: Práctica 3 :.</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="min-vh-100 d-flex flex-column">
+        <header class="text-center bg-purple text-white p-4">
+            <h1 id="modal-title">Gramática libre de contexto para la evaluación <br> de una expresión en un lenguaje de programación</h1>
+        </header>
+
+        <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center;">
+            <div id="container" style="width: 200px; height: 200px; background-color:rgba(34, 34, 34, 0);"></div>
+        </div>    
+
+        <section class="instructions text-center bg-brown text-white p-2">
+            <p><span style="font-weight: bold;">Instrucciones de uso:</span> <em>Ingrese una expresión de entrada, de click en evaluar si es válida o no se mostrará un mensaje y si es válida aparecerá su árbol formado.</em></p>
+        </section>
+        
+        <main class="d-flex justify-content-center align-items-center bg-pink flex-grow-1">
+            <div class="centered-div rounded p-6">
+                <textarea id="entrada" class="form-control mb-3 w-100" placeholder="Introduzca la expresión de entrada"></textarea>
+                <div class="buttons d-flex justify-content-around">
+                    <button class="btn btn-secondary evaluate">Evaluar</button>
+                    <div class="container">
+                        <p class="text-center" id="resultado"></p>
+                    </div>
+                    <button class="btn btn-secondary clear" onclick="limpiar()">Limpiar</button>
+                </div>
+            </div>
+        </main>
+        <div id="tree" style="width: 1000px; height: auto; margin: 20px auto; background: color #c6deee;"> <!-- Div para el árbol -->
+        </div>
+        <footer class="bg-green text-white p-2 mt-auto">
+            <span style="font-style: oblique;">
+                Teoría de la computación 4CM3
+                <br>
+                Alonso Sánchez Eduardo & Vitales Herrera Hatziry 
+            </span>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+    <script src="js/manejador.js"></script>
+    <script src="js/construirArbol.js"></script>
+    <script src="js/gramatica.js"></script>
+    <script src="js/AFD.js"></script>
+</body>
+</html>

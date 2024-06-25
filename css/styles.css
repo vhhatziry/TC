@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:  #F9CFF2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container-fluid {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #6A4C93;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.instructions {
+    background-color: #413620;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: #F9CFF2;
+    padding:  3rem 0rem 2rem;
+    flex-grow: 1;
+}
+
+.centered-div {
+    width: 80%;
+    text-align: center;
+    background-color: #E1B07E;
+    padding: 15px;
+    border: 2px solid #157A6E;
+}
+
+#entrada {
+    width: 60%;
+    height: 150px; /* Ajusta la altura según sea necesario */
+    padding: 20px;
+    margin-bottom: 20px;
+    resize: none; /* Desactiva el redimensionamiento */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;   
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button.evaluate {
+    background-color: #157a50;
+    color: white;
+    margin-left: 3rem;
+}
+
+button.clear {
+    background-color:#C44536;
+    color: #ffffff;
+    margin-right: 3rem;
+}
+
+footer {
+    background-color: #157A6E;
+    color: white;
+    text-align: center;
+    padding: 10px auto;
+    margin-top: auto;
+}
+
+#container {
+    margin: 20px auto;  
+    width: 200px;
+    height: 200px;
+    position: relative;  
+    background-color: #F9CFF2;
+}
+
+#tree {
+    width: 1000px;
+    height: auto;
+    margin: 20px auto;
+    background-color: #c6deee;
+    border: 2px solid #6A4C93; /* Color morado del h1 */
+}
+
